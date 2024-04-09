@@ -9,6 +9,7 @@ import AppPhotoCards from "./components/AppPhotoCards.vue";
 import AppQuotationMarks from "./components/AppQuotationMarks.vue";
 import AppExpertDesignAdvice from "./components/AppExpertDesignAdvice.vue";
 import AppActionCards from "./components/AppActionCards.vue";
+import AppLetsWorkTogether from "./components/AppLetsWorkTogether.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 export default {
@@ -23,6 +24,7 @@ export default {
     AppQuotationMarks,
     AppExpertDesignAdvice,
     AppActionCards,
+    AppLetsWorkTogether,
     AppFooter,
   },
 };
@@ -39,6 +41,7 @@ export default {
   <AppQuotationMarks />
   <AppExpertDesignAdvice />
   <AppActionCards />
+  <AppLetsWorkTogether />
   <AppFooter />
 </template>
 
