@@ -1,6 +1,9 @@
 <template>
   <!-- Sezione "Why Work With Me" -->
-  <section class="why-work-section" style="background-color: #191c23">
+  <section
+    class="why-work-section"
+    style="background-color: #191c23; margin-top: -50px"
+  >
     <h2>Why Work With Me</h2>
     <h3>Web Branding UX UI</h3>
     <p>
@@ -37,10 +40,8 @@ export default {
 .why-work-section {
   color: #f2f2f2;
   height: 400px;
-  padding: 20px;
   text-align: center;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .icon-container {
@@ -53,6 +54,7 @@ export default {
   font-size: 40px;
   margin: 0 20px;
 }
+
 i {
   color: #7a88ab;
 }

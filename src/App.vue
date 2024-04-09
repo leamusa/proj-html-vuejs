@@ -8,6 +8,7 @@ import AppViewAllWork from "./components/AppViewAllWork.vue";
 import AppRecentWork from "./components/AppRecentWork.vue";
 import AppPhotoCards from "./components/AppPhotoCards.vue";
 import AppQuotationMarks from "./components/AppQuotationMarks.vue";
+import AppExpertDesignAdvice from "./components/AppExpertDesignAdvice.vue";
 
 export default {
   name: "App",
@@ -20,6 +21,7 @@ export default {
     AppPhotoCards,
     AppViewAllWork,
     AppQuotationMarks,
+    AppExpertDesignAdvice,
   },
 };
 </script>
@@ -33,6 +35,7 @@ export default {
   <AppPhotoCards />
   <AppViewAllWork />
   <AppQuotationMarks />
+  <AppExpertDesignAdvice />
 </template>
 
 <style></style>
