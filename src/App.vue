@@ -4,6 +4,9 @@ import AppFooter from "./components/AppFooter.vue";
 
 import AppAboutMe from "./components/AppAboutMe.vue";
 import AppWhyWorkWithMe from "./components/AppWhyWorkWithMe.vue";
+import AppViewAllWork from "./components/AppViewAllWork.vue";
+import AppRecentWork from "./components/AppRecentWork.vue";
+
 export default {
   name: "App",
   components: {
@@ -11,6 +14,8 @@ export default {
     AppAboutMe,
     AppFooter,
     AppWhyWorkWithMe,
+    AppViewAllWork,
+    AppRecentWork,
   },
 };
 </script>
@@ -20,6 +25,8 @@ export default {
   <AppAboutMe />
   <AppFooter />
   <AppWhyWorkWithMe />
+  <AppViewAllWork />
+  <AppRecentWork />
 </template>
 
 <style></style>
