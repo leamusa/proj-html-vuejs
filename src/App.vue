@@ -6,6 +6,7 @@ import AppAboutMe from "./components/AppAboutMe.vue";
 import AppWhyWorkWithMe from "./components/AppWhyWorkWithMe.vue";
 import AppViewAllWork from "./components/AppViewAllWork.vue";
 import AppRecentWork from "./components/AppRecentWork.vue";
+import AppPhotoCards from "./components/AppPhotoCards.vue";
 
 export default {
   name: "App",
@@ -16,6 +17,7 @@ export default {
     AppWhyWorkWithMe,
     AppViewAllWork,
     AppRecentWork,
+    AppPhotoCards,
   },
 };
 </script>
@@ -27,6 +29,7 @@ export default {
   <AppWhyWorkWithMe />
   <AppViewAllWork />
   <AppRecentWork />
+  <AppPhotoCards />
 </template>
 
 <style></style>
