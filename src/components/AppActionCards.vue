@@ -26,7 +26,7 @@ export default {
   name: "AppActionCards",
   data() {
     return {
-      backgroundColor: "#191c23",
+      backgroundColor: "#1D2028",
     };
   },
 };

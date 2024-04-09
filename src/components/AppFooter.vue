@@ -1,87 +1,63 @@
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
+  <footer class="footer-container">
+    <div class="logo-container">
+      <img src="/avada-footer-logo.png" alt="Logo" />
     </div>
-  </div>
+    <div class="copyright-container">
+      <p>
+        © Copywrite 2012 - 2020 | Avada theme fusion | All rights reserved |
+        Powered by Wordpress
+      </p>
+    </div>
+    <div class="social-icons-container">
+      <div class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+
+        <i class="fab fa-twitter"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </footer>
 </template>
 
+<script>
+export default {
+  name: "AppFooter",
+};
+</script>
+
 <style scoped>
-.item {
-  margin-top: 2rem;
+.footer-container {
+  background-color: #1d2028;
+  color: #fff;
+  padding: 20px;
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.details {
-  flex: 1;
-  margin-left: 1rem;
+.logo-container img {
+  width: 100px;
 }
 
-i {
+.copyright-container {
+  font-size: 12px;
+}
+
+.social-icons-container {
   display: flex;
-  place-items: center;
-  place-content: center;
-  width: 32px;
-  height: 32px;
-
-  color: var(--color-text);
 }
 
-h3 {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: var(--color-heading);
+.social-icon {
+  margin-right: 10px;
 }
 
-@media (min-width: 1024px) {
-  .item {
-    margin-top: 0;
-    padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
-  }
-
-  i {
-    top: calc(50% - 25px);
-    left: -26px;
-    position: absolute;
-    border: 1px solid var(--color-border);
-    background: var(--color-background);
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-  }
-
-  .item:before {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    bottom: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:after {
-    content: ' ';
-    border-left: 1px solid var(--color-border);
-    position: absolute;
-    left: 0;
-    top: calc(50% + 25px);
-    height: calc(50% - 25px);
-  }
-
-  .item:first-of-type:before {
-    display: none;
-  }
-
-  .item:last-of-type:after {
-    display: none;
-  }
+.social-icon i {
+  font-size: 24px;
 }
 </style>
