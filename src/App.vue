@@ -1,12 +1,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
+
+import AppAboutMe from "./components/AppAboutMe.vue";
 export default {
   name: "App",
   components: {
     AppHeader,
-    AppMain,
+    AppAboutMe,
     AppFooter,
   },
 };
@@ -14,7 +15,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain />
+  <AppAboutMe />
   <AppFooter />
 </template>
 

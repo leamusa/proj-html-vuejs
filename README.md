@@ -1,7 +1,29 @@
-# proj-html-vuejs
+# vue-project
 
-1. attach vue+vite
-2. create 3 components: header, main, footer, (AppMenu, AppPhotoCards)
-3. header:logo(left) + menubar(right) + background img+ title/subtitle
-4. main: about me section=lorem + whywork with me section=img + recent work= pict 6 + view all work sect + cit =background pic+logos
-5. footer=expert design advice + 3pict+lorem + let's work together section+form + logos+social+lorem
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
