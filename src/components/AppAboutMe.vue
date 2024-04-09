@@ -28,9 +28,9 @@ export default {
 <style>
 .about-section {
   height: 400px;
-  background-color: rgb(29, 32, 40);
+  /* background-color: rgb(29, 32, 40); */
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   max-width: 100%;
   color: #fff;
 }

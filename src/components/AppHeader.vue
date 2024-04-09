@@ -39,7 +39,7 @@ export default {
       // logo
       logoSrc: "/avada-freelance-logo.png",
       // background image
-      backgroundImage: "/freelancer_thumbnail.jpg",
+      backgroundImage: "/banner_images.jpg",
     };
   },
   // Methods
