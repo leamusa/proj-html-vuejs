@@ -15,9 +15,9 @@ export default {
     AppAboutMe,
     AppFooter,
     AppWhyWorkWithMe,
-    AppViewAllWork,
     AppRecentWork,
     AppPhotoCards,
+    AppViewAllWork,
   },
 };
 </script>
@@ -27,9 +27,9 @@ export default {
   <AppAboutMe />
   <AppFooter />
   <AppWhyWorkWithMe />
-  <AppViewAllWork />
   <AppRecentWork />
   <AppPhotoCards />
+  <AppViewAllWork />
 </template>
 
 <style></style>

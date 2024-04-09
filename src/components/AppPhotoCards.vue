@@ -37,7 +37,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
 }
 
 .photo-card {
