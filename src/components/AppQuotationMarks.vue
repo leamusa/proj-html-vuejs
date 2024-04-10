@@ -1,6 +1,6 @@
 <template>
   <div
-    class="quotation-marks-container"
+    class="quotation-marks-container skewed-container"
     :style="{ backgroundImage: `url(${backgroundImage})` }"
   >
     <div class="quotation-mark">
@@ -61,13 +61,16 @@ export default {
 
 <style scoped>
 .quotation-marks-container {
-  background: url(/blog3-featured.jpg) center/cover;
   text-align: center;
-  padding: 50px;
+  padding: 100px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 
 .quotation-mark img {
-  width: 50px; /* Set the width of the quotation mark image */
+  width: 50px;
 }
 
 .quotation,
@@ -89,6 +92,7 @@ export default {
   border-radius: 50%;
   margin: 0 10px;
   border: 2px solid #fff; /* Empty circle */
+  margin-bottom: -80px;
 }
 
 .circle.filled {
@@ -98,5 +102,25 @@ export default {
 .global-brand {
   margin-top: 20px;
   font-size: 20px;
+}
+
+.vector-object {
+  display: flex;
+  justify-content: center;
+}
+
+.skewed-container {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 5vw),
+    0 100%
+  ); /* clip-path inclination down */
+}
+.vector-object {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
 }
 </style>

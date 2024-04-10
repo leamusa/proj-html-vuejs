@@ -1,9 +1,6 @@
 <template>
-  <!-- Sezione "About Us" -->
-  <section
-    class="about-section"
-    style="background-color: #1d2028; padding: 20px; text-align: center"
-  >
+  <!-- Sezione "About Me" -->
+  <section class="about-section skewed-container bottom">
     <h2>About Me</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
@@ -25,13 +22,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .about-section {
-  height: 400px;
-  /* background-color: rgb(29, 32, 40); */
+  background-color: #1d2028;
   padding: 20px;
-  /* text-align: center; */
-  max-width: 100%;
+  text-align: center;
   color: #fff;
+  height: 400px;
+}
+
+.skewed-container {
+  clip-path: polygon(0 calc(100% - 5vw), 100% 100%, 100% 0, 0 0);
 }
 </style>

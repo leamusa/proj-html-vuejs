@@ -1,32 +1,32 @@
 <template>
   <!-- Sezione "Why Work With Me" -->
-  <section
-    class="why-work-section"
-    style="background-color: #191c23; margin-top: -50px"
-  >
-    <h2>Why Work With Me</h2>
-    <h3>Web Branding UX UI</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
-      dolor non justo efficitur hendrerit. Nam ac eros in tellus dapibus
-      placerat. Nulla facilisi. Donec congue magna id justo tincidunt rhoncus.
-      Suspendisse vel ultricies enim, ac hendrerit tortor. Vestibulum vestibulum
-      orci non ipsum semper, ac ultricies leo luctus. Vestibulum aliquet semper
-      leo, non condimentum nisi volutpat in. Nam venenatis mi et elit rhoncus,
-      nec sodales sapien aliquet. Sed fringilla mi et ex fermentum ultricies.
-      Morbi in sapien luctus, bibendum lorem eu, lacinia magna. Integer et dolor
-      id libero sollicitudin pulvinar.
-    </p>
-    <!-- Icone Font Awesome -->
-    <div class="icon-container">
-      <!-- Web design -->
-      <i class="fab fa-gitlab"></i>
-      <!-- Web Design Icon -->
-      <i class="fas fa-shield-alt"></i>
-      <!-- diamnte -->
-      <i class="fa-brands fa-sketch"></i>
-      <!-- UX/UI Icon -->
+  <section class="why-work-section">
+    <div class="skewed-container top">
+      <h2>Why Work With Me</h2>
+      <h3>Web Branding UX UI</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula
+        dolor non justo efficitur hendrerit. Nam ac eros in tellus dapibus
+        placerat. Nulla facilisi. Donec congue magna id justo tincidunt rhoncus.
+        Suspendisse vel ultricies enim, ac hendrerit tortor. Vestibulum
+        vestibulum orci non ipsum semper, ac ultricies leo luctus. Vestibulum
+        aliquet semper leo, non condimentum nisi volutpat in. Nam venenatis mi
+        et elit rhoncus, nec sodales sapien aliquet. Sed fringilla mi et ex
+        fermentum ultricies. Morbi in sapien luctus, bibendum lorem eu, lacinia
+        magna. Integer et dolor id libero sollicitudin pulvinar.
+      </p>
+      <!-- Icone Font Awesome -->
+      <div class="icon-container">
+        <!-- Web design -->
+        <i class="fab fa-gitlab"></i>
+        <!-- Web Design Icon -->
+        <i class="fas fa-shield-alt"></i>
+        <!-- diamnte -->
+        <i class="fa-brands fa-sketch"></i>
+        <!-- UX/UI Icon -->
+      </div>
     </div>
+    <div class="skewed-container bottom"></div>
   </section>
 </template>
 
@@ -39,9 +39,33 @@ export default {
 <style scoped>
 .why-work-section {
   color: #f2f2f2;
-  height: 400px;
   text-align: center;
   max-width: 100%;
+  margin-top: -80px;
+  margin-bottom: -80px;
+}
+
+.skewed-container {
+  background-color: #191c23;
+  padding: 50px 0;
+}
+
+.skewed-container.top {
+  clip-path: polygon(
+    0 0,
+    100% 5vw,
+    100% 100%,
+    0 100%
+  ); /*  clip-path =effetto inclinazione */
+}
+
+.skewed-container.bottom {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 5vw),
+    0 100%
+  ); /* Applica il clip-path  */
 }
 
 .icon-container {
@@ -51,7 +75,7 @@ export default {
 }
 
 .icon-container i {
-  font-size: 40px;
+  font-size: 60px; /* Aumenta la dimensione delle icone */
   margin: 0 20px;
 }
 
