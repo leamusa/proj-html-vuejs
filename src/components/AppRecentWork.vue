@@ -2,9 +2,9 @@
   <div class="recent-work-container">
     <h2>Recent Work</h2>
     <ul>
-      <li v-for="(item, index) in recentWorkItems" :key="index">
-        {{ item.title }}
-      </li>
+      <li><span class="bullet"></span> Web</li>
+      <li><span class="bullet"></span> Branding</li>
+      <li><span class="bullet"></span> UI, UX</li>
     </ul>
   </div>
 </template>
@@ -12,15 +12,6 @@
 <script>
 export default {
   name: "AppRecentWork",
-  data() {
-    return {
-      recentWorkItems: [
-        { title: "Web" },
-        { title: "Branding" },
-        { title: "UI, UX" },
-      ],
-    };
-  },
 };
 </script>
 
@@ -30,12 +21,31 @@ export default {
   background-color: #96c577;
   padding: 20px;
 }
-
-/* Element of list */
+.bullet,
 .recent-work-container ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
+  color: #fff;
+}
+
+.recent-work-container ul li {
+  position: relative;
+}
+
+.bullet {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+h2 {
+  margin-top: 50px;
+  color: #fff;
 }
 </style>
