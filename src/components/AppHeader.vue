@@ -12,10 +12,10 @@
       </div>
       <!-- Container for the menu items -->
       <div class="menu">
-        <!-- plus button -->
+        <!-- Plus button -->
         <button class="plus-button" @click="togglePlus">
           <!-- Plus sign symbol -->
-          <span>+</span>
+          <span class="plus-symbol">+</span>
         </button>
         <!-- Button to toggle  -->
         <button class="navbar-toggler" @click="toggleOffcanvas">
@@ -26,6 +26,12 @@
         </button>
       </div>
     </div>
+    <!-- Title "Avada Freelance" in white -->
+    <h2 class="title-white">Avada Freelance</h2>
+    <!-- Title "Art Director" in red, centered, and larger -->
+    <h1 class="title-red">Art Director</h1>
+    <!-- Title with transparency "If you want everything is going to change" -->
+    <h3 class="transparent-title">If you want everything is going to change</h3>
   </header>
 </template>
 
@@ -47,7 +53,40 @@ export default {
 </script>
 
 <style scoped>
-.navbar-toggler {
+/* Styles for the header */
+.header {
+  padding: 10px 20px;
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  align-items: start;
+}
+
+.menu button {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -62,35 +101,28 @@ export default {
   margin-bottom: 5px;
 }
 
-/* Stili per l'header */
-.header {
-  padding: 10px 20px;
-  background-color: #333;
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  height: 700px;
-}
-
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 100px;
-}
-
-.plus-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
+.plus-symbol {
+  font-size: 24px;
   color: white;
 }
 
-.plus-button:hover {
-  background-color: #0056b3;
+.title-white {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title-red {
+  color: #ff0000;
+  font-size: 48px;
+  text-align: center;
+}
+
+.transparent-title {
+  color: white;
+  font-size: 36px;
+  opacity: 0.7;
+  text-align: center;
 }
 </style>
