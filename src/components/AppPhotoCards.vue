@@ -1,9 +1,12 @@
 <template>
   <div class="photo-cards-container">
     <div class="photo-grid">
-      <template v-for="(photo, index) in photos" :key="index">
+      <template v-for="photo in photos" :key="index">
         <div class="photo-card">
           <img :src="photo.url" :alt="photo.alt" class="photo" />
+          <div class="overlay">
+            <span class="overlay-text">Flat Picture Frame</span>
+          </div>
         </div>
       </template>
     </div>
@@ -28,7 +31,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .photo-cards-container {
   text-align: center;
 }
@@ -42,10 +45,39 @@ export default {
 .photo-card {
   width: 30%;
   margin-bottom: -10px;
+  position: relative; /* position relative for'overlay(absolute) */
 }
 
 .photo {
   width: 100%;
   height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.5
+  ); /* Imposta il colore rosso con una trasparenza del 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 24px;
+}
+
+.photo-card:hover .overlay {
+  opacity: 1; /*shwo overlay on the card*/
 }
 </style>
